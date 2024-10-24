@@ -10,7 +10,8 @@ permissions:
   contents: read
 
 env:
-  keymousego-version: _v5_1_1_Tw
+  keymousego-version: tw_1
+    #_v5_1_1
 
 jobs:
   build-windows:
@@ -27,15 +28,15 @@ jobs:
           pip3 install pyinstaller
       - name: Bundle Packages
         run: |
-          pyinstaller -Fw --icon=Mondrian.ico --add-data './assets;assets' KeymouseGo.py
+          pyinstaller -Fw --icon=nekohako.ico --add-data './assets;assets' KeymouseGo.py
       - name: Copy artifact
         run: |
-          mkdir artifact && mv dist/KeymouseGo.exe ./artifact/cmd${{ env.keymousego-version }}-win.exe
+          mkdir artifact && mv dist/KeymouseGo.exe ./artifact/Assistant${{ env.keymousego-version }}-win.exe
         #mkdir artifact && mv dist/KeymouseGo.exe ./artifact/KeymouseGo${{ env.keymousego-version }}-win.exe
       - name: Artifact
         uses: actions/upload-artifact@main
         with:
-          name: windows
+          name: Windows Assistant
           path: ${{ github.workspace }}/artifact/
 
 #  build-linux:
