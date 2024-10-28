@@ -10,7 +10,7 @@ permissions:
   contents: read
 
 env:
-  keymousego-version: tw_1
+  keymousego-version: tw_1_2
     #_v5_1_1
 
 jobs:
@@ -31,12 +31,12 @@ jobs:
           pyinstaller -Fw --icon=nekohako.ico --add-data './assets;assets' KeymouseGo.py
       - name: Copy artifact
         run: |
-          mkdir artifact && mv dist/KeymouseGo.exe ./artifact/Assistant${{ env.Assistant-version }}.exe
+          mkdir artifact && mv dist/KeymouseGo.exe ./artifact/KeymouseGo${{ env.keymousego-version }}.exe
         #mkdir artifact && mv dist/KeymouseGo.exe ./artifact/KeymouseGo${{ env.keymousego-version }}-win.exe
       - name: Artifact
         uses: actions/upload-artifact@main
         with:
-          name: Windows Assistant
+          name: KeymouseGo-ver-TW
           path: ${{ github.workspace }}/artifact/
 
 #  build-linux:
