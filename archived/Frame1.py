@@ -808,7 +808,8 @@ class TaskBarIcon(wxTaskBarIcon):
         self.frame.Raise()
 
     def OnAbout(self, event):
-        wx.MessageBox('https://github.com/taojy123/KeymouseGo', 'KeymouseGo v%s' % VERSION)
+        wx.MessageBox('https://github.com/taojy123/KeymouseGo', 'KeymousegoTW v%s' % VERSION)
+        # wx.MessageBox('https://github.com/taojy123/KeymouseGo', 'KeymouseGo v%s' % VERSION)
         event.Skip()
 
     def OnCloseshow(self, event):
