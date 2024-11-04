@@ -10,7 +10,7 @@ permissions:
   contents: read
 
 env:
-  keymousego-version: TW v1.2
+  keymousego-version: TW_v1_2
     #_v5_1_1
 
 jobs:
@@ -36,7 +36,7 @@ jobs:
       - name: Artifact
         uses: actions/upload-artifact@main
         with:
-          name: TW-v1.0 (KeymouseGo-v5.1)
+          name: KeymouseGoTW v1
           path: ${{ github.workspace }}/artifact/
 
 #  build-linux:
