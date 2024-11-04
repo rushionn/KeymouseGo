@@ -11,11 +11,11 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>KeymouseGo v5.1</string>
+   <string>TW-v1.0 (KeymouseGo-v5.1)</string>
   </property>
   <property name="windowIcon">
    <iconset resource="assets.qrc">
-    <normaloff>:/pic/Mondrian.png</normaloff>:/pic/Mondrian.png</iconset>
+    <normaloff>:/pic/nekohako.png</normaloff>:/pic/nekohako.png</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QGroupBox" name="groupBox">

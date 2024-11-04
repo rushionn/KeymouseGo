@@ -31,12 +31,12 @@ jobs:
           pyinstaller -Fw --icon=nekohako.ico --add-data './assets;assets' KeymouseGo.py
       - name: Copy artifact
         run: |
-          mkdir artifact && mv dist/KeymouseGo.exe ./artifact/KeymouseGo${{ env.keymousegoTW-version }}.exe
+          mkdir artifact && mv dist/KeymouseGo.exe ./artifact/KeymouseGo${{ env.keymousego-version }}.exe
         #mkdir artifact && mv dist/KeymouseGo.exe ./artifact/KeymouseGo${{ env.keymousego-version }}-win.exe
       - name: Artifact
         uses: actions/upload-artifact@main
         with:
-          name: KeymouseGo-ver-TW 
+          name: TW-v1.0 (KeymouseGo-v5.1)
           path: ${{ github.workspace }}/artifact/
 
 #  build-linux:
