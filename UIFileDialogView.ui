@@ -15,7 +15,7 @@
   </property>
   <property name="windowIcon">
    <iconset resource="assets.qrc">
-    <normaloff>:/pic/Mondrian.png</normaloff>:/pic/Mondrian.png</iconset>
+    <normaloff>:/pic/nekohako.png</normaloff>:/pic/nekohako.png</iconset>
   </property>
   <widget class="QWidget" name="formLayoutWidget">
    <property name="geometry">

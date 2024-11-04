@@ -262,7 +262,7 @@ class Ui_UIView(object):
     # setupUi
 
     def retranslateUi(self, UIView):
-        UIView.setWindowTitle(QCoreApplication.translate("UIView", u"TW-v1.0 (KeymouseGo-v5.1)", None))
+        UIView.setWindowTitle(QCoreApplication.translate("UIView", u"KeymouseGoTW v1.2", None))
         self.groupBox.setTitle(QCoreApplication.translate("UIView", u"Hotkeys", None))
         self.label_stop.setText(QCoreApplication.translate("UIView", u"Terminate", None))
         self.label_language.setText(QCoreApplication.translate("UIView", u"Language", None))

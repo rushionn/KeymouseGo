@@ -10,7 +10,7 @@ permissions:
   contents: read
 
 env:
-  keymousego-version: tw_1_2
+  keymousego-version: TW v1.2
     #_v5_1_1
 
 jobs:

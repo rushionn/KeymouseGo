@@ -87,7 +87,7 @@ class Frame1(wx.Frame):
         wx.Frame.__init__(self, id=wxID_FRAME1, name='', parent=prnt,
               pos=wx.Point(SW / 2 - 183, SH / 2 - 115.5), size=wx.Size(366, 271),
               style=wx.STAY_ON_TOP | wx.DEFAULT_FRAME_STYLE,
-              title='KeymouseGo v%s' % VERSION)
+              title='KeymouseGoTW v%s' % VERSION)
         self.SetClientSize(self.FromDIP(wx.Size(361, 270)))
 
         self.panel1 = wx.Panel(id=wxID_FRAME1PANEL1, name='panel1', parent=self,
@@ -808,7 +808,7 @@ class TaskBarIcon(wxTaskBarIcon):
         self.frame.Raise()
 
     def OnAbout(self, event):
-        wx.MessageBox('https://github.com/taojy123/KeymouseGo', 'KeymousegoTW v%s' % VERSION)
+        wx.MessageBox('https://github.com/rushionn/KeymouseGo', 'KeymousegoTW v%s' % VERSION)
         # wx.MessageBox('https://github.com/taojy123/KeymouseGo', 'KeymouseGo v%s' % VERSION)
         event.Skip()
 
