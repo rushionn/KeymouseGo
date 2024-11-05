@@ -333,20 +333,19 @@ class UIFunc(QMainWindow, Ui_UIView, QtStyleTools):
         event.accept()
 
 def loadconfig(self):
-    config_path = to_abs_path('config.ini')
-    if not os.path.exists(config_path):
-        with open(config_path, 'w', encoding='utf-8') as f:
-            f.write('[Config]\n'
-                    'StartHotKeyIndex=3\n'
-                    'StopHotKeyIndex=6\n'
-                    'RecordHotKeyIndex=7\n'
-                    'LoopTimes=1\n'
-                    'Precision=200\n'
-                    'ExecuteSpeed=100\n'
-                    'Language=zh-tw\n'
-                    'Extension=Extension\n'
-                    'Theme=dark_lightgreen.xml\n')
-    return QSettings(config_path, QSettings.IniFormat)
+        if not os.path.exists(to_abs_path('config.ini')):
+            with open(to_abs_path('config.ini'), 'w', encoding='utf-8') as f:
+                f.write('[Config]\n'
+                        'StartHotKeyIndex=3\n'
+                        'StopHotKeyIndex=6\n'
+                        'RecordHotKeyIndex=7\n'
+                        'LoopTimes=1\n'
+                        'Precision=200\n'
+                        'ExecuteSpeed=100\n'
+                        'Language=zh-tw\n'
+                        'Extension=Extension\n'
+                        'Theme=dark_lightgreen.xml\n')
+        return QSettings(to_abs_path('config.ini'), QSettings.IniFormat)
 
     def get_script_path(self):
         i = self.choice_script.currentIndex()
