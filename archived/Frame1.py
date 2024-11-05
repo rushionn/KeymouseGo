@@ -38,21 +38,21 @@ i18n.set('locale', conf['language'])
 ID_MAP = {'zh-tw':0, 'en':1}
 RID_MAP = {0:'zh-tw', 1:'en'}
 
-def GetMondrianStream():
+def GetnekohakoStream():
     data = b'\x89PNG\r\n\x1a\n\x00\x00\x00\rIHDR\x00\x00\x00 \x00\x00\x00 \x08\x06\x00\x00\x00szz\xf4\x00\x00\x00\x04sBIT\x08\x08\x08\x08|\x08d\x88\x00\x00\x00qIDATX\x85\xed\xd6;\n\x800\x10E\xd1{\xc5\x8d\xb9r\x97\x16\x0b\xad$\x8a\x82:\x16o\xda\x84pB2\x1f\x81Fa\x8c\x9c\x08\x04Z{\xcf\xa72\xbcv\xfa\xc5\x08 \x80r\x80\xfc\xa2\x0e\x1c\xe4\xba\xfaX\x1d\xd0\xde]S\x07\x02\xd8>\xe1wa-`\x9fQ\xe9\x86\x01\x04\x10\x00\\(Dk\x1b-\x04\xdc\x1d\x07\x14\x98;\x0bS\x7f\x7f\xf9\x13\x04\x10@\xf9X\xbe\x00\xc9 \x14K\xc1<={\x00\x00\x00\x00IEND\xaeB`\x82'
     stream = io.BytesIO(data)
     return stream
 
 
-def GetMondrianBitmap():
-    stream = GetMondrianStream()
+def GetnekohakoBitmap():
+    stream = GetnekohakoStream()
     image = wx.ImageFromStream(stream)
     return wx.BitmapFromImage(image)
 
 
-def GetMondrianIcon():
+def GetnekohakoIcon():
     icon = wx.EmptyIcon()
-    icon.CopyFromBitmap(GetMondrianBitmap())
+    icon.CopyFromBitmap(GetnekohakoBitmap())
     return icon
 
 
@@ -249,7 +249,7 @@ class Frame1(wx.Frame):
 
         self._init_ctrls(parent)
 
-        self.SetIcon(GetMondrianIcon())
+        self.SetIcon(GetnekohakoIcon())
         self.taskBarIcon = TaskBarIcon(self)
         self.Bind(wx.EVT_CLOSE, self.OnClose)
         self.Bind(wx.EVT_ICONIZE, self.OnIconfiy)
@@ -795,7 +795,7 @@ class TaskBarIcon(wxTaskBarIcon):
     def __init__(self, frame):
         wxTaskBarIcon.__init__(self)
         self.frame = frame
-        self.SetIcon(GetMondrianIcon())
+        self.SetIcon(GetnekohakoIcon())
         self.Bind(EVT_TASKBAR_LEFT_DCLICK, self.OnTaskBarLeftDClick)
         self.Bind(wx.EVT_MENU, self.OnAbout, id=self.ID_About)
         self.Bind(wx.EVT_MENU, self.OnCloseshow, id=self.ID_Closeshow)
