@@ -53,7 +53,7 @@ def get_assets_path(*paths):
 
 
 scripts = []
-scripts_map = {'current_index': 0, 'choice_language': 简体中文'}
+scripts_map = {'current_index': 0, 'choice_language': '繁體中文'}
 
 
 def get_script_list_from_dir():
