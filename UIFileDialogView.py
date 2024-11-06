@@ -20,7 +20,7 @@ class Ui_Dialog(object):
         Dialog.resize(313, 111)
         Dialog.setWindowTitle('File Manage')
         icon = QIcon()
-        icon.addFile(u":/pic/Mondrian.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon.addFile(u":/pic/Nekohako.png", QSize(), QIcon.Normal, QIcon.Off)
         Dialog.setWindowIcon(icon)
         self.formLayoutWidget = QWidget(Dialog)
         self.formLayoutWidget.setObjectName(u"formLayoutWidget")
