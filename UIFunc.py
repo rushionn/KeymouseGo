@@ -332,7 +332,7 @@ class UIFunc(QMainWindow, Ui_UIView, QtStyleTools):
             self.runthread.resume()
         event.accept()
 
-    def loadconfig(self):
+def loadconfig(self):
         if not os.path.exists(to_abs_path('config.ini')):
             with open(to_abs_path('config.ini'), 'w', encoding='utf-8') as f:
                 f.write('[Config]\n'
