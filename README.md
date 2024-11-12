@@ -10,3 +10,7 @@
 結束錄製後，無法直接啟動(會卡住)，需要關閉程式重啟後才能正常運作，比較麻煩 <br/>
 
 [Cursor](https://www.cursor.com/)
+https://dokodemo.world/zh-Hant/brand/3298/
+https://dokodemo.world/zh-Hant/brand/306/
+https://dokodemo.world/zh-Hant/maker/234/?category_id=10015&sort_id=1
+https://dokodemo.world/zh-Hant/category/1804/
