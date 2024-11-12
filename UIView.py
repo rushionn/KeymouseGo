@@ -19,7 +19,7 @@ class Ui_UIView(object):
             UIView.setObjectName(u"UIView")
         UIView.resize(652, 476)
         icon = QIcon()
-        icon.addFile(u":/pic/nekohako.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon.addFile(u":/pic/Mondrian.png", QSize(), QIcon.Normal, QIcon.Off)
         UIView.setWindowIcon(icon)
         self.centralwidget = QWidget(UIView)
         self.centralwidget.setObjectName(u"centralwidget")
@@ -262,7 +262,7 @@ class Ui_UIView(object):
     # setupUi
 
     def retranslateUi(self, UIView):
-        UIView.setWindowTitle(QCoreApplication.translate("UIView", u"KeymouseGoTW v1.2", None))
+        UIView.setWindowTitle(QCoreApplication.translate("UIView", u"KeymouseGo v5.1", None))
         self.groupBox.setTitle(QCoreApplication.translate("UIView", u"Hotkeys", None))
         self.label_stop.setText(QCoreApplication.translate("UIView", u"Terminate", None))
         self.label_language.setText(QCoreApplication.translate("UIView", u"Language", None))
