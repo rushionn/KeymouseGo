@@ -15,7 +15,7 @@ import winreg
 '''
 
 conf = configparser.ConfigParser()
-# 是否切換主要/次要功能鍵
+# 是否切换主要/次要功能键
 swapmousebuttons = True if winreg.QueryValueEx(winreg.OpenKey(winreg.HKEY_CURRENT_USER,
                                                               r'Control Panel\Mouse',
                                                               0,
@@ -33,7 +33,7 @@ def setdefaultconf(config):
     config.set('Config', 'LoopTimes', '1')
     config.set('Config', 'Precision', '200')
     config.set('Config', 'ExecuteSpeed', '100')
-    config.set('Config', 'Language', 'zh-tw')
+    config.set('Config', 'Language', 'zh-cn')
 
 def getconfig():
     if not os.path.exists('../config.ini'):
