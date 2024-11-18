@@ -35,8 +35,8 @@ HOT_KEYS = ['F3', 'F4', 'F5', 'F6', 'F7', 'F8', 'F9', 'F10', 'F11', 'F12']
 conf = config.getconfig()
 i18n.load_path.append('i18n')
 i18n.set('locale', conf['language'])
-ID_MAP = {'zh-cn':0, 'en':1}
-RID_MAP = {0:'zh-cn', 1:'en'}
+ID_MAP = {'en':0, 'zh-tw':1}
+RID_MAP = {0:'en', 1:'zh-tw'}
 
 def GetMondrianStream():
     data = b'\x89PNG\r\n\x1a\n\x00\x00\x00\rIHDR\x00\x00\x00 \x00\x00\x00 \x08\x06\x00\x00\x00szz\xf4\x00\x00\x00\x04sBIT\x08\x08\x08\x08|\x08d\x88\x00\x00\x00qIDATX\x85\xed\xd6;\n\x800\x10E\xd1{\xc5\x8d\xb9r\x97\x16\x0b\xad$\x8a\x82:\x16o\xda\x84pB2\x1f\x81Fa\x8c\x9c\x08\x04Z{\xcf\xa72\xbcv\xfa\xc5\x08 \x80r\x80\xfc\xa2\x0e\x1c\xe4\xba\xfaX\x1d\xd0\xde]S\x07\x02\xd8>\xe1wa-`\x9fQ\xe9\x86\x01\x04\x10\x00\\(Dk\x1b-\x04\xdc\x1d\x07\x14\x98;\x0bS\x7f\x7f\xf9\x13\x04\x10@\xf9X\xbe\x00\xc9 \x14K\xc1<={\x00\x00\x00\x00IEND\xaeB`\x82'
@@ -808,7 +808,7 @@ class TaskBarIcon(wxTaskBarIcon):
         self.frame.Raise()
 
     def OnAbout(self, event):
-        wx.MessageBox('https://github.com/taojy123/KeymouseGo', 'KeymouseGo v%s' % VERSION)
+        wx.MessageBox('https://github.com/rushionn/KeymouseGo', 'KeymouseGo v%s' % VERSION)
         event.Skip()
 
     def OnCloseshow(self, event):

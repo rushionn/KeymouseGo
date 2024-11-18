@@ -148,3 +148,13 @@ def setuphook(commandline=False):
     hm.HookKeyboard()
     # Wait Forever
     # pythoncom.PumpMessages()
+
+#以下是新增的 11/15
+    hm = pyWinhook.HookManager()
+    try:
+        # 設置鉤子
+    except Exception as e:
+        logger.error("Failed to set hook: {}".format(e))
+    finally:
+        hm.UnhookKeyboard()  # 確保鉤子能夠被釋放
+        # 可能還需要釋放其他資源

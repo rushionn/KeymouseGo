@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh_TW">
+<TS version="2.1" language="zh_TW">  <!-- 將 'zh_CN' 改為 'zh_TW' -->
 <context>
     <name>Dialog</name>
     <message>
@@ -41,7 +41,7 @@
     <message>
         <source>PINFN</source>
         <translatorcomment>請輸入新文件名：</translatorcomment>
-        <translation>請輸入新文件名：</translation>
+        <translation>請輸入新文件名稱：</translation>  <!-- 修改為繁體 -->
     </message>
     <message>
         <source>Success</source>
@@ -51,7 +51,7 @@
     <message>
         <source>FNCBEOS</source>
         <translatorcomment>文件名不能未空或空格</translatorcomment>
-        <translation>文件名不能為空或空格</translation>
+        <translation>文件名稱不能為空或空格</translation>  <!-- 修改為繁體 -->
     </message>
 </context>
 <context>
@@ -71,7 +71,7 @@
         <location filename="UIView.ui" line="69"/>
         <source>Terminate</source>
         <translatorcomment>終止錄制</translatorcomment>
-        <translation>終止錄制</translation>
+        <translation>終止錄製</translation>  <!-- 修改為繁體 -->
     </message>
     <message>
         <location filename="UIView.ui" line="76"/>
@@ -83,13 +83,13 @@
         <location filename="UIView.ui" line="106"/>
         <source>Record/Pause</source>
         <translatorcomment>開始/暫停錄制</translatorcomment>
-        <translation>開始/暫停錄制</translation>
+        <translation>開始/暫停錄製</translation>  <!-- 修改為繁體 -->
     </message>
     <message>
         <location filename="UIView.ui" line="123"/>
         <source>Extension</source>
         <translatorcomment>擴展插件</translatorcomment>
-        <translation>擴展插件</translation>
+        <translation>擴充功能</translation>  <!-- 修改為繁體 -->
     </message>
     <message>
         <location filename="UIView.ui" line="130"/>
@@ -101,7 +101,7 @@
         <location filename="UIView.ui" line="158"/>
         <source>Record</source>
         <translatorcomment>開始錄制</translatorcomment>
-        <translation>開始錄制</translation>
+        <translation>開始錄製</translation>  <!-- 修改為繁體 -->
     </message>
     <message>
         <location filename="UIView.ui" line="171"/>
@@ -113,7 +113,7 @@
         <location filename="UIView.ui" line="187"/>
         <source>Pause Record</source>
         <translatorcomment>暫停錄制</translatorcomment>
-        <translation>暫停錄制</translation>
+        <translation>暫停錄製</translation>  <!-- 修改為繁體 -->
     </message>
     <message>
         <location filename="UIView.ui" line="206"/>
@@ -130,13 +130,13 @@
         <location filename="UIView.ui" line="264"/>
         <source>Config</source>
         <translatorcomment>配置</translatorcomment>
-        <translation>配置</translation>
+        <translation>設定</translation>  <!-- 修改為繁體 -->
     </message>
     <message>
         <location filename="UIView.ui" line="292"/>
         <source>Mouse precision</source>
         <translatorcomment>鼠標精度</translatorcomment>
-        <translation>鼠標精度</translation>
+        <translation>滑鼠精確度</translation>  <!-- 修改為繁體 -->
     </message>
     <message>
         <location filename="UIView.ui" line="299"/>
@@ -170,17 +170,17 @@
     <message>
         <source>Finish</source>
         <translatorcomment>結束錄制</translatorcomment>
-        <translation>結束錄制</translation>
+        <translation>結束錄製</translation>  <!-- 修改為繁體 -->
     </message>
     <message>
         <source>Continue</source>
         <translatorcomment>繼續錄制</translatorcomment>
-        <translation>繼續錄制</translation>
+        <translation>繼續錄製</translation>  <!-- 修改為繁體 -->
     </message>
     <message>
         <source>Pause</source>
         <translatorcomment>暫停錄制</translatorcomment>
-        <translation>暫停錄制</translation>
+        <translation>暫停錄製</translation>  <!-- 修改為繁體 -->
     </message>
 </context>
 </TS>

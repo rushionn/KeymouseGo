@@ -33,7 +33,7 @@ def setdefaultconf(config):
     config.set('Config', 'LoopTimes', '1')
     config.set('Config', 'Precision', '200')
     config.set('Config', 'ExecuteSpeed', '100')
-    config.set('Config', 'Language', 'zh-cn')
+    config.set('Config', 'Language', 'zh-tw')
 
 def getconfig():
     if not os.path.exists('../config.ini'):
