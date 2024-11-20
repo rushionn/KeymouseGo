@@ -53,7 +53,7 @@ def get_assets_path(*paths):
 
 
 scripts = []
-scripts_map = {'current_index': 0, 'choice_language': '简体中文'}
+scripts_map = {'current_index': 0, 'choice_language': '繁體中文'}
 
 
 def get_script_list_from_dir():
@@ -89,11 +89,11 @@ class UIFunc(QMainWindow, Ui_UIView, QtStyleTools):
         self.setFocusPolicy(Qt.NoFocus)
 
         self.trans = QTranslator(self)
-        self.choice_language.addItems(['简体中文', 'English'])
+        self.choice_language.addItems(['繁體中文', 'English'])
         self.choice_language.currentTextChanged.connect(self.onchangelang)
 
         # 获取默认的地区设置
-        language = '简体中文' if locale.getdefaultlocale()[0] == 'zh_CN' else 'English'
+        language = '繁體中文' if locale.getdefaultlocale()[0] == 'zh_tw' else 'English'
         self.choice_language.setCurrentText(language)
         self.onchangelang()
 
@@ -303,8 +303,8 @@ class UIFunc(QMainWindow, Ui_UIView, QtStyleTools):
     def onchangelang(self):
         global scripts_map
 
-        if self.choice_language.currentText() == '简体中文':
-            self.trans.load(get_assets_path('i18n', 'zh-cn'))
+        if self.choice_language.currentText() == '繁體中文':
+            self.trans.load(get_assets_path('i18n', 'zh-tw'))
             _app = QApplication.instance()
             _app.installTranslator(self.trans)
             self.retranslateUi(self)
@@ -342,7 +342,7 @@ class UIFunc(QMainWindow, Ui_UIView, QtStyleTools):
                         'LoopTimes=1\n'
                         'Precision=200\n'
                         'ExecuteSpeed=100\n'
-                        'Language=zh-cn\n'
+                        'Language=zh-tw\n'
                         'Extension=Extension\n'
                         'Theme=light_cyan_500.xml\n')
         return QSettings(to_abs_path('config.ini'), QSettings.IniFormat)
