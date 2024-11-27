@@ -344,7 +344,7 @@ class UIFunc(QMainWindow, Ui_UIView, QtStyleTools):
                         'ExecuteSpeed=100\n'
                         'Language=zh-tw\n'
                         'Extension=Extension\n'
-                        'Theme=light_cyan_500.xml\n')
+                        'Theme=dark_lightgreen.xml\n')
         return QSettings(to_abs_path('config.ini'), QSettings.IniFormat)
 
     def get_script_path(self):
